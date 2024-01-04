@@ -1,0 +1,345 @@
+/*套入 Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;/*解決區塊寬高問題*/
+}
+body {
+    font-family: 'Roboto', 'sans-serif';
+    width: 940px;
+    height: 54px;
+    flex-shrink: 0;
+    color:#fce1e1 ;
+}
+div.wrap-all {
+    width: 830px;/*這個寬度要跟main-card的寬度一樣*/
+    margin: 0px auto;/*讓所有內容居中*/
+    color:#fce1e1 ;
+}
+div.logo {
+    width: 200px;
+    height: 200px;
+    background-image: url(image/Brown\ Beige\ Simple\ Aesthetic\ Home\ Made\ Dessert\ Logo.png);
+    background-size: cover;
+    margin: auto;
+}
+div.product {
+    width: 300px;
+    height: 150px;
+    background-image: url(image/Green\ Modern\ Fun\ Earth\ Tone\ Dessert\ Cake\ Loyalty\ Card-3.png);
+    background-size: cover;
+    margin: auto;
+}
+div.enter {
+    width: 400px;
+    height: 50px;
+}
+main.main-card {
+    width: 830px;
+    height: 300px;
+    margin-bottom: 16px;/*擠出 main 與 section 之間的空間*/
+    padding-top: 180px;/*把文字往下擠*/
+    padding-left: 30px;/*把文字往右擠*/
+    background-image: url(image/natalia-y-o9kswzHrvMs-unsplash.jpg);
+    background-size: cover;/*讓背景圖片寬度等於區塊寬度*/
+    border-radius: 16px;/*四周加上圓角*/
+    color: #FFF;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 96% */
+}
+div.main-text {
+    color: #EFEFEF;
+    padding-top: 10px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+div.card {
+    width: 275px;
+    height: 320px;
+    background-color:white;
+    border-radius: 16px;/*四周加上圓角*/
+    overflow: hidden;/*隱藏超出範圍的內容*/
+}
+div.card-image {
+    width: 100%;
+    height: 150px;
+    padding-top: 60px;
+    padding-left: 0px;
+    background-size: cover;
+    text-align:center;
+    color: #FFF;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 16px;
+}
+div.card-intro {
+    padding: 16px 20px;
+    color: var(--Main-Color, #3E4936);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 24px */
+}
+/*以下為換圖設定*/
+div.pancake .card-image {
+    background-image: url(image/samira-rahi-1EyPRtknc54-unsplash.jpg);
+}
+div.cupcake .card-image {
+    background-image: url(image/michaela-baum-VnM6_liIRJ0-unsplash.jpg);
+}
+div.dount .card-image {
+    background-image: url(image/najlacam-F71ZHHBYs3w-unsplash.jpg);
+}
+div.pie .card-image {
+    background-image: url(image/brooke-lark-of0pMsWApZE-unsplash.jpg);
+}
+div.chocolate .card-image {
+    background-image: url(image/ella-olsson-uG1jwfpCRhg-unsplash.jpg);
+}
+div.cake .card-image {
+    background-image: url(image/fumiaki-hayashi-Mc4zVTBTMjY-unsplash.jpg);
+}
+input{
+    border:2px #ffc7c7 solid;
+    font-size: 15px;
+    font-style: normal;
+    font-family: Montserrat;
+    text-align:center;
+    background-color:#fff1f1;
+    color:#000000;
+    border-radius:30px;
+    cursor:pointer;}
+  
+  input:hover{
+    font-family: Montserrat;
+    text-align:center;
+    color:#000000;
+    background-color:#ffffff;
+    border:2px #ffc7c7 solid;
+  }
+div.card-button {
+    display: flex;
+    width: 270px;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Montserrat;
+    text-align:center;
+    border: 2px gray solid;
+    border-radius: 20px;
+    color: var(--Main-Color, #3E4936);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/*利用 CSS flexbox 語法讓小卡橫排*/
+section {
+    display: flex;
+    gap: 10px;
+}
+div.logo2 {
+    width: 200px;
+    height: 200px;
+    background-image: url(image/Brown\ Beige\ Simple\ Aesthetic\ Home\ Made\ Dessert\ Logo.png);
+    background-size: cover;
+    margin: auto;
+}
+.bx-wrapper {
+    margin: auto;
+    position: relative;
+    margin-bottom: 60px;
+    padding: 0;
+    *zoom: 1;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+  }
+  .bx-wrapper img {
+    max-width: 100%;
+    display: block;
+  }
+.bxslider {
+    margin: 0;
+    padding: 0;
+    /*fix flickering when used background-image instead of <img> (on Chrome)*/
+    -webkit-perspective: 1000;
+  }
+ul.bxslider {
+    list-style: none;
+  }
+  .bx-wrapper {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border: 5px solid #fff;
+    background: #fff;
+  }
+  .bx-wrapper .bx-pager,
+  .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 15px; /*輪播控制元件位置*/
+    width: 100%;
+    z-index: 999;
+  }
+  /* LOADER */
+  .bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url('image/bx_loader.gif') center center no-repeat #ffffff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+  }
+  /* PAGER */
+  .bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgba(0, 0, 0, 0.5);/*還沒播到的圓點顏色*/
+    text-indent: -9999px;
+    display: block;
+    width: 10px;/*圓點寬度設定*/
+    height: 10px;/*圓點高度設定*/
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a:hover,
+  .bx-wrapper .bx-pager.bx-default-pager a.active,
+  .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    width: 30px;
+    background: #fff; /*輪播到的圓點顏色*/
+  }
+  .bx-wrapper .bx-pager-item,
+  .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    vertical-align: bottom;
+    *zoom: 1;
+    *display: inline;
+  }
+  .bx-wrapper .bx-pager-item {
+    font-size: 0;
+    line-height: 0;
+  }
+  /* DIRECTION CONTROLS (NEXT / PREV) */
+  .bx-wrapper .bx-prev {
+    left: 10px;
+    background: url('image/controls.png') no-repeat 0 -32px;
+  }
+  .bx-wrapper .bx-prev:hover,
+  .bx-wrapper .bx-prev:focus {
+    background-position: 0 0;
+  }
+  .bx-wrapper .bx-next {
+    right: 10px;
+    background: url('image/controls.png') no-repeat -43px -32px;
+  }
+  .bx-wrapper .bx-next:hover,
+  .bx-wrapper .bx-next:focus {
+    background-position: -43px 0;
+  }
+  .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+  }
+  .bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+  }
+  /* AUTO CONTROLS (START / STOP) */
+  .bx-wrapper .bx-controls-auto {
+    text-align: center;
+  }
+  .bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background: url('image/controls.png') -86px -11px no-repeat;
+    margin: 0 3px;
+  }
+  .bx-wrapper .bx-controls-auto .bx-start:hover,
+  .bx-wrapper .bx-controls-auto .bx-start.active,
+  .bx-wrapper .bx-controls-auto .bx-start:focus {
+    background-position: -86px 0;
+  }
+  .bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background: url('image/controls.png') -86px -44px no-repeat;
+    margin: 0 3px;
+  }
+  .bx-wrapper .bx-controls-auto .bx-stop:hover,
+  .bx-wrapper .bx-controls-auto .bx-stop.active,
+  .bx-wrapper .bx-controls-auto .bx-stop:focus {
+    background-position: -86px -33px;
+  }
+  /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+  }
+  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+  }
+  /* IMAGE CAPTIONS */
+  .bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666;
+    background: rgba(80, 80, 80, 0.75);
+    width: 100%;
+  }
+  .bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+  }
+footer {
+    color: grey;
+    font-family: Inter;
+    font-size: 13px;
+    width: 900px;
+    height: 54px;
+    padding-top: 20px;
+    text-align:center;
+    background: #EFEFEF;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11136011張瑋恬</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .bx-wrapper {/*預設的外框陰影*/
+    box-shadow: 0 0 0;/*消去陰影*/
+    border:0;/*消去邊框*/ }
+</style>
+</head>
+<body>
+<div class="wrap-all">
+    <div class="logo"></div>
+<!--主要卡片內容-->
+    <main class="main-card">
+        Winnie <br>
+        Dessert <br>
+    </main>
+    <div class="product"></div>
+<!--小卡片內容-->
+<section>
+    <div class="card pancake">
+        <div class="card-image">
+            Strawberry pancake
+        </div>
+        <div class="card-intro">
+            Strawberry pancakes are a delicious twist on traditional pancakes, featuring fresh strawberries mixed into the batter.
+        </div>
+        <input type="button" value="Learn more about pancake" name="button" style="width:270px;height:45px;">
+    </div>
+    <div class="card cupcake">
+        <div class="card-image">
+            Chocolate cupcake
+        </div>
+        <div class="card-intro">
+            Are small, indulgent treats made with rich chocolate batter. Topped with frosting, they're a perfect sweet delight for any occasion.
+        </div>
+        <input type="button" value="Learn more about cupcake" name="button" style="width:270px;height:45px;">
+    </div>
+    <div class="card dount">
+        <div class="card-image">
+            Dount
+        </div>
+        <div class="card-intro">
+            They come in various flavors and toppings, making them a popular and delightful treat for breakfast or snack time.
+        </div>
+        <input type="button" value="Learn more about dount" name="button" style="width:270px;height:45px;">
+    </div>
+</section>
+<div class="enter"></div>
+<section>
+    <div class="card pie">
+        <div class="card-image">
+            Berry pie
+        </div>
+        <div class="card-intro">
+            Berry pie is a delicious dessert made with a buttery crust and filled with a mixture of sweet and tart berries.<br>
+              <br>          
+        </div>
+        <input type="button" value="Learn more about pie" name="button" style="width:270px;height:45px;">
+    </div>
+    <div class="card chocolate">
+        <div class="card-image">
+            Chocolate
+        </div>
+        <div class="card-intro">
+            Chocolate is a beloved sweet treat made from cocoa beans. It comes in various forms, including bars, truffles, and hot cocoa.
+        </div>
+        <input type="button" value="Learn more about chocolate" name="button" style="width:270px;height:45px;">
+    </div>
+    <div class="card cake">
+        <div class="card-image">
+            Strawberry cake
+        </div>
+        <div class="card-intro">
+            Strawberry cake is a delicious dessert featuring layers of moist cake infused with fresh strawberry flavor.
+        </div>
+        <input type="button" value="Learn more about cake" name="button" style="width:270px;height:45px;">
+    </div>
+</section>
+<div class="enter"></div>
+<div class="bxslider">
+    <div><img src="image/wesual-click-BgirKolxbIk-unsplash.jpg"></div>
+    <div><img src="image/massimo-adami-TZiT3GH8aW4-unsplash.jpg"></div>
+    <div><img src="image/serghei-savchiuc-Ic0E0y6Zo20-unsplash.jpg"></div>
+    <div><img src="image/aneta-voborilova-mlcm6qi9Bu8-unsplash.jpg"></div>
+  </div>
+</div>
+<footer>
+    © Winnie Dessert 
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--置入套件專用 JavaScript-->
+<script src="jquery.bxslider.js"></script>
+<!--設定相關環境參數-->
+<script type="text/javascript">
+$('.bxslider').bxSlider({
+  auto: true, //自動播放
+  stopAutoOnClick: true, //滑鼠點選時停止播放
+  pager: true, //顯示下方圓點
+  slideWidth: 600 //圖片寬度(像素)
+});
+</script>
+</html>
